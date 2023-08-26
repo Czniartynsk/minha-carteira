@@ -28,4 +28,8 @@ export const Grid = styled.div`
     background-color: ${props => props.theme.colors.secondary};
     border-radius: 10px;
   }
+
+  ::-webkit-scrollbar-corner{
+    background-color: ${props => "#1b1f3800"}
+  }
 `;
