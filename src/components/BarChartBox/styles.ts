@@ -5,53 +5,47 @@ interface ILegendProps {
 }
 
 export const Container = styled.div`
-    width: 100%;
-    
-    display: flex;
-    flex-direction: column;
-
-    background-color: ${props => props.theme.colors.tertiary};
-    color: ${props => props.theme.colors.white};
+    width: 48%;
+    min-height: 260px;
 
     margin: 10px 0;
-    padding: 30px 3px;
 
+    justify-content: space-between;
+    background-color: ${props => props.theme.colors.tertiary};
+    color: ${props => props.theme.colors.white};
+    
     border-radius: 7px;
     
-    height: 260px;
-`;
-
-
-export const ChartContainer = styled.div`
-    flex: 1;
     display: flex;
 `;
 
-export const Header = styled.header`
-    widht: 100%;
-
-    display: flex;
-    justify-content: space-between;
+export const SideLeft = styled.aside`
+    width: 56%;
+    padding: 30px 3px;
 
     > h2 {
-        margin-bottom: 20px;
-        padding-left: 17px;
+         padding-left: 17px;
+         margin-bottom: 10px;
     }
 `;
 
 export const LegendContainer = styled.ul`
     list-style: none;
 
-    display: flex;
-    padding-right: 17px;
+    height: 175px;
+    padding-right: 15px;
+
+    overflow: scroll;
 `;
 
 export const Legend = styled.li<ILegendProps>`
     display: flex;
+    
     align-items: center;
 
     margin-bottom: 7px;
-    margin-left: 7px;
+
+    padding-left: 17px;
 
     > div {
         background-color: ${props => props.color};
@@ -61,11 +55,18 @@ export const Legend = styled.li<ILegendProps>`
         border-radius: 5px;
 
         font-size: 14px;
-        line-height: 38px;
+        line-height: 40px;
         text-align: center;
     }
 
     > span {
         margin-left: 5px;
     }
+`;
+
+export const SideRight = styled.main`
+    width: 38%;
+    min-height: 150px;
+
+    padding-top: 35px;
 `;
