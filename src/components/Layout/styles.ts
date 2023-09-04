@@ -30,6 +30,6 @@ export const Grid = styled.div`
   }
 
   ::-webkit-scrollbar-corner{
-    background-color: ${props => "#1b1f3800"}
+    background-color: ${props => props.theme.colors.transparent};
   }
 `;

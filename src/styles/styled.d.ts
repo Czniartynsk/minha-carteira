@@ -13,7 +13,9 @@ declare module 'styled-components' {
             black: string,
             gray: string,
     
+            eventual: string,
             success: string,
+            transparent: string,
             info: string,
             warning: string,
         },

@@ -9,7 +9,9 @@ export default {
         black: '#FFF',
         gray: '#BFBFBF',
 
-        success: '#03BB85',
+        eventual: '#b264bf',
+        success: '#4E41F0',
+        transparent: '#1b1f3800',
         info: '#3B5998',
         warning: '#FF6961',
     },

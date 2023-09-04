@@ -1,10 +1,6 @@
 import React from 'react';
 import {
     MdOutlineExitToApp,
-    MdDashboard,
-    MdArrowDownward,
-    MdArrowUpward,
-    MdExitToApp
 } from 'react-icons/md';
 
 import { GiWallet } from "react-icons/gi";
@@ -12,16 +8,20 @@ import { TbTrendingDown3, TbTrendingUp3 } from "react-icons/tb";
 
 import logoImg from '../../assets/logo.svg';
 
+import { useAuth } from '../../hooks/auth';
+
 import { 
     Container,
     Header,
     LogImg,
     Title,
     MenuContainer,
-    MenuItemLink
+    MenuItemLink,
+    MenuItemButton,
 } from './styles';
 
 const Aside: React.FC = () => {
+    const { signOut } = useAuth();
     return (
         <Container>    
             <Header>
@@ -30,7 +30,7 @@ const Aside: React.FC = () => {
             </Header>
 
             <MenuContainer>
-                <MenuItemLink to="/dashboard">
+                <MenuItemLink to="/">
                     <GiWallet/>
                     Dashboard
                 </MenuItemLink>
@@ -45,10 +45,10 @@ const Aside: React.FC = () => {
                     Saídas
                 </MenuItemLink>
 
-                <MenuItemLink to="#">
+                <MenuItemButton onClick={signOut}>
                     <MdOutlineExitToApp></MdOutlineExitToApp>
                     Sair
-                </MenuItemLink>
+                </MenuItemButton>
             </MenuContainer>    
         </Container>
     );

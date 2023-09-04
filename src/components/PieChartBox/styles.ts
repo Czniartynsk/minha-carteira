@@ -16,10 +16,13 @@ export const Container = styled.div`
     border-radius: 7px;
 
     display: flex;
+    justify-content: space-between;
 `;
 
 export const SideLeft = styled.aside`
-    padding: 30px 20px;
+    padding: 30px 0px 0px 20px;
+
+    width: 48%;
 
     > h2 {
         margin-bottom: 30px;
@@ -30,7 +33,7 @@ export const LegendContainer = styled.ul`
     list-style: none;
 
     height: 155px;
-    padding-right: 15px;
+
     overflow: scroll;
 `;
 
@@ -58,7 +61,6 @@ export const Legend = styled.li<ILegendProps>`
 `;
 
 export const SideRight = styled.main`
-    display: flex;
-    flex: 1;
+    width: 48%;
     justify-content: center;
 `;
