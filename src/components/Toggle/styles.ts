@@ -6,9 +6,7 @@ export const Container = styled.div`
     align-items: center;
 `;
 
-export const ToggleLabel = styled.span`
-    
-`;
+export const ToggleLabel = styled.span``;
 
 export const ToggleSelector = styled(Switch).attrs<ReactSwitchProps>(
     ({theme}) => ({

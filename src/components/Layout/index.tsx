@@ -12,9 +12,7 @@ const Layout: React.FC<React.PropsWithChildren> = ({ children }) => (
         <Aside/>
         <Content>
             { children }
-        </Content>
-        
-        
+        </Content>   
     </Grid>
 );
 

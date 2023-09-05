@@ -19,6 +19,18 @@ export const Grid = styled.div`
 
     height: 100vh;
 
+    /**
+     * Tornando Responsivo
+    */
+    @media(max-width: 770px){
+      grid-template-columns: 100%;
+      grid-template-rows: 70px auto;
+
+      grid-template-areas: 
+      'MH'
+      'CT';
+    }
+
   /* Chrome, Edge, and Safari */
   ::-webkit-scrollbar {
     width:10px;
